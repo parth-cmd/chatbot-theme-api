@@ -5,7 +5,7 @@ import openai
 app = Flask(__name__)
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-@app.route("/")
+@app.route("/backend")
 def home():
     return "✅ Chatbot API is live!"
 

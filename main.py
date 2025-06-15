@@ -9,7 +9,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 def home():
     return "✅ Chatbot API is live!"
 
-@app.route("/backend", methods=["POST"])
+@app.route("/chat", methods=["POST"])
 def chat():
     data = request.get_json()
     prompt = data.get("prompt", "")

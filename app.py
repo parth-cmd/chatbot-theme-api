@@ -5,6 +5,8 @@ import sys
 sys.path.append(str(Path(__file__).resolve().parents[1] / "backend"))
 from chatbot import get_answers_and_themes
 
+app = Flask(__name__)
+
 def chat_interface(question):
     answer, citations = get_answers_and_themes(question)
 
